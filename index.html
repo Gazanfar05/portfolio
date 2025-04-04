@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gazanfar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<!-- INTRO SCREEN -->
+<div id="intro-screen">
+    <div class="intro-text">Welcome to <span>Gazanfar's World</span></div>
+  </div>
+  <!-- Preloader with Progress Bar -->
+  <div id="preloader">
+    <div class="loader-wrapper">
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="themeSwitch">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <img src="grafitti.png" alt="Gazanfar Graffiti" class="graffiti-logo">
+    <div class="logo">Gazanfar's World</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://github.com/Gazanfar05" target="_blank">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN SECTION -->
+  <section class="about-container" id="about">
+    <div class="content">
+      <h1 class="glow">Hey, I'm Gazanfar</h1>
+      <p class="tagline"> Welcome to my portfolio </p>
+
+      <div class="info-box">
+        <p><span>Field:</span> Computer Science & Engineering @ BMSIT&M</p>
+        <p><span>SGPA:</span> 9.35 in 1st sem (Not flexing, just facts.)</p>
+        <p><span>Skills:</span> HTML, CSS, JS, Java, Git</p>
+        <p><span>Vibe:</span> Desi Hip-Hop lover, football fanatic, code addict</p>
+      </div>
+
+      <a href="#projects" class="btn">Check My Work</a>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <!-- PROJECTS SECTION -->
+  <section class="projects-container" id="projects">
+    <div class="content">
+      <h1 class="glow">Projects</h1>
+      <p class="tagline">Here’s where the magic happens.</p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <h2>Lofi Portfolio</h2>
+          <p>This chill, glowy site you're vibing with.</p>
+        </div>
+        <div class="project-card">
+          <h2>
+            <a href="https://github.com/Gazanfar05/Java-Task-Manager" target="_blank" class="project-link">
+              Java Task Manager
+            </a>
+          </h2>
+          <p>Console-based task tracker with OOP.</p>
+        </div>
+        <div class="project-card">
+          <h2>Weather App</h2>
+          <div class="project-card">
+            <h3>Weather App ⛅</h3>
+            <p>Live weather updates with slick UI, animations.</p>
+            <a href="https://github.com/Gazanfar05/Live-weather" target="_blank">💻 View Code</a>
+          </div>
+          <p>HTML/CSS/JS live weather fetcher.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Preloader - with progress bar
+    document.addEventListener("DOMContentLoaded", () => {
+      const preloader = document.getElementById("preloader");
+      setTimeout(() => {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 500);
+      }, 1800); // match the animation duration
+    });
+
+    // Theme Toggle
+    const themeSwitch = document.getElementById("themeSwitch");
+    const body = document.body;
+    themeSwitch.addEventListener("change", () => {
+      body.classList.toggle("light-mode");
+    });
+  </script>
+
+</body>
+</html>
